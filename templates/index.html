@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Data</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>NBA Team Data</h1>
+    <div id="chart"></div>
+    <script>
+        var data = [{
+            x: ['Lakers', 'Warriors'],
+            y: [10, 12],
+            type: 'bar'
+        }];
+
+        Plotly.newPlot('chart', data);
+    </script>
+    {{ tables|safe }}
+</body>
+</html> 
